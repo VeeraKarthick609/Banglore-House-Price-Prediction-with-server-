@@ -67,3 +67,18 @@ Install dependencies using the following command:
 
 ```bash
 pip install -r requirements.txt
+```
+API Payloads:
+
+To get estimated price: 
+(https://banglore-price-prediction.onrender.com/predict_home_price)
+```bash
+{
+  "total_sqft": 1500,
+  "location": "Whitefield",
+  "bhk": 3,
+  "bath": 2
+}
+```
+To get available locations: 
+(https://banglore-price-prediction.onrender.com/get_location_names)

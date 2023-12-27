@@ -1,7 +1,0 @@
-runtime: python39  # Change this to your desired Python version
-
-instance_class: F2
-
-env_variables:
-  FLASK_APP: "server.py"  # Replace with your actual main file name
-  FLASK_ENV: "production"

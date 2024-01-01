@@ -46,3 +46,39 @@ The trained model is saved using pickle, and column information is saved in a JS
 - matplotlib
 - scikit-learn
 
+# Bangalore Home Price Prediction API
+
+This Flask application serves predictions for house prices in Bangalore using a trained machine learning model. The model predicts home prices based on input parameters such as total square footage, location, number of bedrooms (BHK), and number of bathrooms.
+
+## Getting Started
+
+To get started, follow the instructions below to run the Flask server on your local machine.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Python 3.x
+- Flask
+- NumPy
+- scikit-learn
+
+Install dependencies using the following command:
+
+```bash
+pip install -r requirements.txt
+```
+API Payloads:
+
+To get estimated price: 
+(https://banglore-price-prediction.onrender.com/predict_home_price)
+```bash
+{
+  "total_sqft": 1500,
+  "location": "Whitefield",
+  "bhk": 3,
+  "bath": 2
+}
+```
+To get available locations: 
+(https://banglore-price-prediction.onrender.com/get_location_names)
